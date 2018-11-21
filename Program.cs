@@ -16,7 +16,7 @@ namespace notify_deployment_appinsights
             Console.WriteLine("Writing to: " + Arguments.InstrumentationKey());
             Console.WriteLine("Service deployed: " + Arguments.ServiceName());
 
-            var traceTelemetry = new TraceTelemetry("New Release of " + Arguments.ServiceName());
+            var traceTelemetry = new TraceTelemetry("New Deployment of " + Arguments.ServiceName());
             AddCustomPropertiesIfAny(traceTelemetry);
             telemetryClient.TrackTrace(traceTelemetry);
 
