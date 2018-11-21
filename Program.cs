@@ -4,7 +4,7 @@ using Microsoft.ApplicationInsights;
 using Microsoft.ApplicationInsights.DataContracts;
 using Microsoft.ApplicationInsights.Extensibility;
 
-namespace app_insights_writer
+namespace notify_deployment_appinsights
 {
     public class Program
     {
