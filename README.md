@@ -1,8 +1,11 @@
-# app-insights-writer
+# notify-deployment-appinsights
 
-App Insights tool to Write Deployment. Designed to work in your pipeline as a container.
+This tool will notify that you have made a deployment to application insights. 
+It's intended to work in your pipeline as a container, and in a central application insights where you can easily query and correlate all your deployments.
 
-# Mandatory Environment Variables:
+It will read values from your Environment Variables.
+
+# Environment Variables you'll need:
 
 `INSTRUMENTATION_KEY`: Instrumentation Key of Application Insights.
 `SERVICE_NAME`: Name of the service being deployed.
