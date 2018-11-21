@@ -1,9 +1,9 @@
 # notify-deployment-appinsights
 
-This tool will notify that you have made a deployment to application insights. 
-It's intended to work in your pipeline as a container, and in a central application insights where you can easily query and correlate all your deployments.
+This console app will notify that you have made a deployment to application insights. 
+It's intended to run in your pipeline as a docker container where you can set environment variables at will, aimed for a central application insights where you can query and correlate all your deployments.
 
-It will read values from your Environment Variables.
+It will read values from your Environment Variables, so it relies on `Environment.GetEnvironmentVariable(key)` from `System`. 
 
 # Environment Variables you'll need:
 
@@ -17,7 +17,7 @@ It will read values from your Environment Variables.
 `VERSION_NUMBER`: Version of your service
 
 
-Example of usage:
+# Example of usage:
 
 ```
 docker build -t appi .
